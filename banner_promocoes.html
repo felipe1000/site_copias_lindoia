@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR">
+	<head>
+		<title>
+					jQuery: Criando banners de transi��o com o InnerFade
+		</title>		
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="innerfade.js"></script>
+		<script type="text/javascript">  
+	   $( document ).ready(
+				function(){			
+					$('ul#slide').innerfade ({
+						speed: 1000,
+						timeout: 3000,
+						type: 'sequence',
+						containerheight: '860px'
+					});					
+			});
+  	    </script>
+        
+		<link href="innerfade.css" rel="stylesheet" type="text/css" />
+    </head>
+	<body bgcolor="#262626" topmargin="0" leftmargin="0">
+				<ul id="slide">					
+					<li> <img src="banner1.png" width="860" height="140"  /></li>
+                    <li><img src="banner2.png" width="860" height="140"  /></li>					
+					<li><img src="banner3.png" width="860" height="140"  /></li>
+                   	<li> <img src="banner4.png" width="860" height="140"  /></li>			
+				</ul>					
+	</body>
+
+</html>
